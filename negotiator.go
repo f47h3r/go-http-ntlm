@@ -26,7 +26,7 @@ var (
 
 // generates NTLM Negotiate type-1 message
 // for details see http://www.innovation.ch/personal/ronald/ntlm.html
-func negotiate() []byte {
+func Negotiate() []byte {
 	ret := make([]byte, 44)
 	flags := negotiateAlwaysSign | negotiateNTLM | requestTarget | negotiateOEM | negotiateUnicode
 
